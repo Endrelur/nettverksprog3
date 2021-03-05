@@ -6,8 +6,12 @@ import java.util.List;
 
 public interface IAddressService {
     List<Address> findAll();
+
     Address findAddress(Integer id);
-    Address deleteAddress(Integer id);
+
+    void deleteAddress(Integer id);
+
     void addAddress(Address address);
-    void updateAddress(Integer id, Address address);
+
+    void updateAddress(Address address);
 }
